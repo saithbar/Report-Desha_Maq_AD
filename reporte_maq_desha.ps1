@@ -7,8 +7,8 @@
 # Fecha: Septiembre 2024
 #*******End Comment**************
 import-module activedirectory  
-#$domain = "ags-spain.local"
-$searchOU = "ou=WIP,DC=ags-spain,DC=local"  
+#$domain = "Domain.local"
+$searchOU = "ou=WIP,DC=Domain,DC=local"  
 $DaysInactive = 180  
 $time = (Get-Date).Adddays( - ($DaysInactive)) 
   
