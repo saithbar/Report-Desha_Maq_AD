@@ -1,6 +1,6 @@
 ﻿#*******Begin Comment**************
 .SYNOPSIS
-#	This script performs the  uninstallation of an application(s).
+#	This script removes from AD all machines with more than 180 days without reporting.
 #  Script for Report of machine with more 180 days not report to AD
 # version V1
 # Autor: Saith Barreto
@@ -8,7 +8,7 @@
 #*******End Comment**************
 import-module activedirectory  
 #$domain = "Domain.local"
-$searchOU = "ou=WIP,DC=Domain,DC=local"  
+$searchOU = "ou=OU,DC=Domain,DC=local"  
 $DaysInactive = 180  
 $time = (Get-Date).Adddays( - ($DaysInactive)) 
   
